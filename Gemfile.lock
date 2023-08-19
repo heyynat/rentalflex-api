@@ -1,0 +1,32 @@
+GIT
+  remote: https://github.com/jeremyevans/rack-unreloader.git
+  revision: 68c87c7cc72a9a92c67fed761a92d7a8fe7bc1f0
+  branch: master
+  specs:
+    rack-unreloader (2.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.8)
+    rack-protection (3.1.0)
+      rack (~> 2.2, >= 2.2.4)
+    ruby2_keywords (0.0.5)
+    sinatra (3.1.0)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.1.0)
+      tilt (~> 2.0)
+    tilt (2.2.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  rack-unreloader!
+  sinatra
+
+BUNDLED WITH
+   2.4.10
