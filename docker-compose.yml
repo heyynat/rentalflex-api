@@ -17,6 +17,3 @@ services:
       DATABASE_URL: postgres://postgres:postgres@postgres/rentalflex_dev
     ports:
       - "4567:4567"
-
-volumes:
-  postgres_data:
