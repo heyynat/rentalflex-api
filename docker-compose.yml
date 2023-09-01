@@ -1,0 +1,22 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: rentalflex_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres/rentalflex_dev
+    ports:
+      - "4567:4567"
+
+volumes:
+  postgres_data:

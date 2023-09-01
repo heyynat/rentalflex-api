@@ -1,7 +1,7 @@
-require 'rack/unreloader'
+require "rack/unreloader"
+require_relative './app'
 
-Unreloader = Rack::Unreloader.new{RentalFlex}
-Unreloader.require './app.rb'
+Unreloader = Rack::Unreloader.new { App }
+Unreloader.require "./app"
 
-run Unreloader
-Rack::Unreloader.new(handle_reload_errors: true){RentalFlex}
+run App

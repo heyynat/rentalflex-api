@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  database: rentalflex_dev
+  username: postgres
+  password: postgres
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: rentalflex_test
+
+production:
+  <<: *default
+  database: rentalflex_prod
